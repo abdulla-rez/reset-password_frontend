@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const commonAPI = axios.create({
-  baseURL: 'http://localhost:5000/auth',
+  baseURL: 'https://reset-password-backend-4.onrender.com/auth',
   headers: { 'Content-Type': 'application/json' },
 });
 
