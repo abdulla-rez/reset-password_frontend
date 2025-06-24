@@ -43,6 +43,8 @@ export default function SignupForm() {
       setTimeout(() => navigate('/login'), 1500);
     } catch (e: any) {
       setAlert({ type: 'error', message: e.response?.data?.message || 'Signup failed' });
+      setData({ name: '', email: '', password: '' });
+      setConfirm('')
     } finally {
       setLoading(false);
     }
